@@ -10,6 +10,19 @@
 
 <body>
     <div class="container mt-4">
+
+    <h1>PHP BASICO</h1>
+    <ul>
+        <ol>1.Operadores con String</ol>
+        <ol>2.Operadores Aritmeticos</ol>
+        <ol>3.Tipos de datos</ol>
+        <ol>4.Operaciones con array</ol>
+        <ol>5.Condicionales</ol>
+        <ol>6.Ciclos</ol>
+        <ol>7.Salir</ol>
+        
+    </ul>
+
         <h6 class="text-center">Formulario de ANDRE ALATA CUNO</h6>
         <hr>
         <form method="POST" action="" class="form-inline">
@@ -23,6 +36,8 @@
         <hr>
 
         <?php
+        include "./operadoreslogicos.php";
+
         if (isset($_POST["n"])) {
             echo '<div class="alert alert-info">Número ingresado: ' . $_POST["n"] . '</div>';
         }
@@ -34,6 +49,11 @@
         if (isset($_GET["precio"])) {
             echo '<div class="alert alert-warning">Existe la variable "precio": ' . $_GET["precio"] . '</div>';
         }
+
+        $ol = new OperadoresLogicos();
+        $ol->operadores();
+        $ol->saludo();
+
         ?>
 
     </div>
@@ -44,9 +64,7 @@
         </div>
 
 
-
-
-
+       
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
