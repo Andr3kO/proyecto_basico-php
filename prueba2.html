@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capibaras 2077</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d; /* Fondo oscuro */
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff0077, #00ccff);
+            color: #0d0d0d;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-shadow: 0 0 10px #ff0077, 0 0 20px #00ccff;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 2rem auto;
+            gap: 1rem;
+            padding: 0 1rem;
+        }
+
+        .sidebar, .container {
+            flex: 1;
+            background: rgba(20, 20, 20, 0.9);
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 0 15px #00ccff, 0 0 25px #ff0077;
+        }
+
+        .sidebar {
+            border: 2px solid #00ccff;
+        }
+
+        .container {
+            border: 2px solid #ff0077;
+        }
+
+        .container img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #ff0077, 0 0 25px #00ccff;
+        }
+
+        .sidebar h3, .container h2 {
+            color: #00ccff;
+            text-shadow: 0 0 5px #00ccff, 0 0 10px #ff0077;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #00ccff, #ff0077);
+            color: #0d0d0d;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Estilo para pantallas pequeñas */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .main-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .sidebar, .container {
+                flex: 1 1 auto;
+            }
+        }
+
+        /* Estilo para pantallas muy pequeñas */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Capibaras 2077</h1>
+    </header>
+
+    <div class="main-content">
+        <!-- Barra lateral izquierda -->
+        <div class="sidebar">
+            <h3>Datos Curiosos</h3>
+            <ul>
+                <li>El capibara es el roedor más grande del mundo.</li>
+                <li>Pueden correr hasta 35 km/h en tierra.</li>
+                <li>Son excelentes nadadores y pueden permanecer bajo el agua 5 minutos.</li>
+            </ul>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="container">
+            <h2 class="neon-text">Los Reyes Neón de los Humedales</h2>
+            <img src="https://media.tenor.com/EqHYyOvNNRgAAAAe/capybara-encanto-encanto.png" alt="Capibara Neón">
+            <p><strong class="neon-text">Descripción:</strong> En un mundo dominado por la tecnología, los capibaras se han adaptado como nunca antes. Son los maestros de los humedales urbanos y los únicos animales capaces de hackear sistemas hidráulicos.</p>
+            <p><strong class="neon-text">Hábitat:</strong> Ciudades inundadas, alcantarillas iluminadas por neones y lagos artificiales llenos de vida cibernética.</p>
+            <p><strong class="neon-text">Dieta:</strong> Chips biológicos, plantas acuáticas genéticamente modificadas y frutas irradiadas.</p>
+            <p><strong class="neon-text">Curiosidad:</strong> Los capibaras pueden sincronizar sus cerebros con redes locales, compartiendo datos y huyendo de depredadores robóticos.</p>
+        </div>
+
+        <!-- Barra lateral derecha -->
+        <div class="sidebar">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="#" style="color: #00ccff;">Historia de los Capibaras</a></li>
+                <li><a href="#" style="color: #00ccff;">Evolución Cibernética</a></li>
+                <li><a href="#" style="color: #00ccff;">Vida Salvaje Neón</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2077 - Resistencia Cibernética Capibara</p>
+    </footer>
+</body>
+</html>
